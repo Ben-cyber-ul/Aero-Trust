@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="Partner Two">
+  <rect width="240" height="80" rx="8" fill="#fff9f0"/>
+  <g transform="translate(18,18)" fill="#ff8c00">
+    <circle cx="40" cy="30" r="20" fill="#ffd8a8"/>
+    <text x="84" y="40" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#d97706" font-weight="700">AeroFuel</text>
+  </g>
+</svg>

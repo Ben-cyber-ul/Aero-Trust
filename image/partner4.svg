@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="Partner Four">
+  <rect width="240" height="80" rx="8" fill="#f0f7ff"/>
+  <g transform="translate(18,16)" fill="#6f42c1">
+    <path d="M0 36 h56 v8 h-56 z" fill="#e9defa"/>
+    <text x="80" y="44" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#3c1361" font-weight="700">NavLink</text>
+  </g>
+</svg>

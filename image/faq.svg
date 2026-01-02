@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="FAQ illustration">
+  <rect width="120" height="80" rx="8" fill="#f7f6ff"/>
+  <g transform="translate(20,18)" fill="#6f42c1">
+    <circle cx="18" cy="18" r="10" fill="#6f42c1"/>
+    <rect x="40" y="10" width="48" height="12" rx="3" fill="#a78bfa"/>
+    <rect x="40" y="30" width="34" height="8" rx="3" fill="#c4b5fd"/>
+  </g>
+</svg>

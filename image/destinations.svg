@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Destinations illustration">
+  <rect width="120" height="80" rx="8" fill="#fff8ef"/>
+  <g transform="translate(18,12)" fill="#ff8c00">
+    <path d="M46 4 L62 12 L58 20 L36 28 L28 22 L46 4 Z"/>
+    <circle cx="18" cy="46" r="6" fill="#fb923c"/>
+    <circle cx="54" cy="46" r="6" fill="#fb923c"/>
+  </g>
+</svg>

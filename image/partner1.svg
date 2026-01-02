@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="Partner One">
+  <rect width="240" height="80" rx="8" fill="#eef7ff"/>
+  <g transform="translate(18,20)" fill="#0d6efd">
+    <rect x="0" y="8" width="64" height="40" rx="6" fill="#cfe3ff"/>
+    <text x="84" y="40" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#0b5ed7" font-weight="700">Skyport</text>
+  </g>
+</svg>

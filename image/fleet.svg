@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Fleet illustration">
+  <rect width="120" height="80" rx="8" fill="#f1fbff"/>
+  <g transform="translate(12,12)" fill="#0d6efd">
+    <path d="M2 30 L40 22 L42 18 L48 18 L50 22 L88 30 L80 34 L70 31 L62 36 L48 38 L38 34 L24 36 Z"/>
+    <circle cx="20" cy="48" r="6" fill="#0b5ed7"/>
+    <circle cx="60" cy="48" r="6" fill="#0b5ed7"/>
+  </g>
+</svg>

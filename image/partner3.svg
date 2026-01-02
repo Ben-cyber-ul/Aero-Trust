@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 80" role="img" aria-label="Partner Three">
+  <rect width="240" height="80" rx="8" fill="#f8fff5"/>
+  <g transform="translate(18,18)" fill="#198754">
+    <rect x="0" y="8" width="56" height="44" rx="6" fill="#d6f5e5"/>
+    <text x="80" y="44" font-family="Verdana, Geneva, sans-serif" font-size="20" fill="#0f5132" font-weight="700">JetCare</text>
+  </g>
+</svg>

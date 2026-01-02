@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Careers illustration">
+  <rect width="120" height="80" rx="8" fill="#fff7f5"/>
+  <g transform="translate(18,16)" fill="#dc3545">
+    <path d="M6 52 L26 40 L46 44 L64 36 L90 40 L72 52 L50 50 L30 54 Z"/>
+    <rect x="8" y="8" width="28" height="14" rx="3" fill="#f88379"/>
+  </g>
+</svg>

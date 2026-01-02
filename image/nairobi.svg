@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80" role="img" aria-label="Nairobi illustration">
+  <rect width="120" height="80" rx="8" fill="#fffaf0"/>
+  <g transform="translate(12,14)">
+    <path d="M6 50 L30 28 L50 36 L70 24 L92 36 L74 52 L48 46 L28 54 Z" fill="#f97316" opacity="0.95"/>
+    <circle cx="18" cy="20" r="6" fill="#fb923c"/>
+    <rect x="72" y="10" width="34" height="12" rx="3" fill="#ffd8a8"/>
+  </g>
+</svg>

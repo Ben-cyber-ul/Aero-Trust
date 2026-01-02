@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Aero Trust — Reliable, comfortable air travel. Book flights, manage bookings, and fly with confidence." />
+  <meta name="keywords" content="Aero Trust,flights,booking,airline,tickets,travel" />
+  <title>Aero Trust — Fly with Confidence</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="#">
+        <img src="image/logo.svg" alt="Aero Trust logo" height="36" class="me-2">
+        <span class="fw-bold">Aero Trust</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#flights">Flights</a></li>
+          <li class="nav-item"><a class="nav-link" href="#booking">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="hero text-light d-flex align-items-center">
+    <div class="container text-center py-5">
+      <h1 class="display-4 fw-bold">Aero Trust</h1>
+      <p class="lead mb-4">Reliable flights, great fares, and a comfortable journey.</p>
+      <a href="#booking" class="btn btn-lg btn-light text-primary">Book a Flight</a>
+    </div>
+  </section>
+
+  <!-- Flights sample -->
+  <section id="flights" class="py-5">
+    <div class="container">
+      <h2 class="mb-4">Popular Routes</h2>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card shadow-sm popular-route position-relative overflow-hidden h-100">
+            <img src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1000&q=80" class="card-img-top" alt="Lagos — London flight">
+            <div class="card-body">
+              <h5 class="card-title">Lagos — London</h5>
+              <p class="card-text">Daily service with comfortable seating and great meals.</p>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Popular Route</div>
+                <div class="h6 mb-0">Lagos — London</div>
+                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm popular-route position-relative overflow-hidden h-100">
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?w=1000&q=80" class="card-img-top" alt="Abuja — Dubai flight">
+            <div class="card-body">
+              <h5 class="card-title">Abuja — Dubai</h5>
+              <p class="card-text">Non-stop service with premium amenities.</p>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Popular Route</div>
+                <div class="h6 mb-0">Abuja — Dubai</div>
+                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card shadow-sm popular-route position-relative overflow-hidden h-100">
+            <img src="https://images.unsplash.com/photo-1495567720989-cebdbdd97913?w=1200&q=80" class="card-img-top" alt="Enugu — Johannesburg">
+            <div class="card-body">
+              <h5 class="card-title">Enugu — Johannesburg</h5>
+              <p class="card-text">Convenient connections and friendly service.</p>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Popular Route</div>
+                <div class="h6 mb-0">Enugu — Johannesburg</div>
+                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fleet & Services -->
+  <section id="fleet" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-4">Our Fleet & Services</h2>
+      <p class="text-muted">Aero Trust operates a modern fleet maintained to the highest safety standards. Here are some highlights of our in-flight services and fleet:</p>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="image/seating.svg" alt="Comfortable seating" class="card-illustration mb-3">
+              <h5 class="card-title">Comfortable Seating</h5>
+              <p class="card-text">Ergonomically designed seats with ample legroom across all classes.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="image/ontime.svg" alt="On-time performance" class="card-illustration mb-3">
+              <h5 class="card-title">Reliable On-time Performance</h5>
+              <p class="card-text">We monitor operations proactively to reduce delays and ensure timely arrivals.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card h-100">
+            <div class="card-body">
+              <img src="image/entertainment.svg" alt="In-flight entertainment" class="card-illustration mb-3">
+              <h5 class="card-title">In-flight Entertainment</h5>
+              <p class="card-text">Curated movies, music, and podcasts to make your flight enjoyable.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Destinations (expanded) -->
+  <section id="destinations" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4">Destinations <img src="image/destinations.svg" alt="Destinations" class="section-illustration ms-2 align-middle"></h2>
+      <p class="text-muted">Explore popular and upcoming destinations served by Aero Trust. Click a destination to prefill the booking form.</p>
+      <div class="row g-3">
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="Lagos">
+            <img src="https://images.unsplash.com/photo-1499673610122-01c7122c5dcb?w=800&q=60" class="card-img-top" alt="Lagos, Nigeria skyline at dusk">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Lagos</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Nigeria</div>
+                <div class="h6 mb-0">Lagos</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="London">
+            <img src="https://images.unsplash.com/photo-1505761671935-60b3a7427bad?w=800&q=60" class="card-img-top" alt="London, United Kingdom">
+            <div class="card-body">
+              <h6 class="card-title mb-0">London</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">United Kingdom</div>
+                <div class="h6 mb-0">London</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="Dubai">
+            <img src="https://images.unsplash.com/photo-1508057198894-247b23fe5ade?w=800&q=60" class="card-img-top" alt="Dubai skyline with Burj Khalifa">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Dubai</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">United Arab Emirates</div>
+                <div class="h6 mb-0">Dubai</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="Johannesburg">
+            <img src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=60" class="card-img-top" alt="Johannesburg, South Africa">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Johannesburg</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">South Africa</div>
+                <div class="h6 mb-0">Johannesburg</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Additional destination cards to expand content -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="Accra">
+            <img src="https://images.unsplash.com/photo-1560807707-8cc77767d783?w=800&q=60" class="card-img-top" alt="Accra, Ghana waterfront">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Accra</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Ghana</div>
+                <div class="h6 mb-0">Accra</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card h-100 destination" data-city="Nairobi">
+            <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=60" class="card-img-top" alt="Nairobi skyline">
+            <div class="card-body">
+              <h6 class="card-title mb-0">Nairobi</h6>
+            </div>
+            <div class="route-overlay position-absolute top-0 start-0 w-100 h-100 d-flex flex-column justify-content-end p-3">
+              <div class="overlay-content bg-gradient p-2 rounded text-light">
+                <div class="small">Kenya</div>
+                <div class="h6 mb-0">Nairobi</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bookings Management (admin/demo) -->
+  <section id="bookings" class="py-5">
+    <div class="container">
+      <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2 class="mb-0"><img src="image/bookings.svg" alt="Bookings" class="section-illustration me-2 align-middle"> Bookings <small id="bookingsCount" class="text-muted ms-2">(0)</small></h2>
+        <div class="d-flex gap-2">
+          <input id="searchBookings" class="form-control form-control-sm" placeholder="Search by name, route or email">
+          <button id="exportCsv" class="btn btn-sm btn-outline-secondary">Export CSV</button>
+          <button id="clearBookings" class="btn btn-sm btn-danger">Clear All</button>
+        </div>
+      </div>
+      <div class="table-responsive">
+        <table class="table table-striped table-hover" id="bookingsTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>Passenger</th>
+              <th>Route</th>
+              <th>Departure</th>
+              <th>Return</th>
+              <th>Class</th>
+              <th>Passengers</th>
+              <th>Price</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="bookingsList">
+            <!-- Filled by JS -->
+          </tbody>
+        </table>
+      </div>
+      <!-- Pagination -->
+      <nav aria-label="Bookings pagination" class="mt-3">
+        <ul id="bookingsPagination" class="pagination pagination-sm justify-content-center mb-0">
+          <!-- generated by JS -->
+        </ul>
+      </nav>
+      <small class="text-muted d-block mt-2">This section shows locally saved bookings (for demo purposes).</small>
+    </div>
+  </section>
+
+  <!-- Edit Booking Modal -->
+  <div class="modal fade" id="editBookingModal" tabindex="-1" aria-labelledby="editBookingModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="editBookingModalLabel">Edit Booking</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="editBookingForm" class="row g-2">
+            <input type="hidden" id="editId">
+            <div class="col-12">
+              <label class="form-label">Full name</label>
+              <input id="editName" class="form-control" required>
+            </div>
+            <div class="col-12">
+              <label class="form-label">Email</label>
+              <input id="editEmail" type="email" class="form-control" required>
+            </div>
+            <div class="col-6">
+              <label class="form-label">From</label>
+              <input id="editFrom" class="form-control" required>
+            </div>
+            <div class="col-6">
+              <label class="form-label">To</label>
+              <input id="editTo" class="form-control" required>
+            </div>
+            <div class="col-6">
+              <label class="form-label">Departure</label>
+              <input id="editDepart" type="date" class="form-control">
+            </div>
+            <div class="col-6">
+              <label class="form-label">Return</label>
+              <input id="editReturn" type="date" class="form-control">
+            </div>
+            <div class="col-6">
+              <label class="form-label">Passengers</label>
+              <input id="editPassengers" type="number" min="1" class="form-control">
+            </div>
+            <div class="col-6">
+              <label class="form-label">Class</label>
+              <select id="editClass" class="form-select">
+                <option value="economy">Economy</option>
+                <option value="business">Business</option>
+                <option value="first">First</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" id="saveEditBooking" class="btn btn-primary">Save changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Confirm Delete Modal -->
+  <div class="modal fade" id="confirmDeleteModal" tabindex="-1" aria-labelledby="confirmDeleteLabel" aria-hidden="true">
+    <div class="modal-dialog modal-sm modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-body">
+          <p id="confirmDeleteText">Are you sure you want to delete this booking?</p>
+          <div class="d-flex justify-content-end gap-2 mt-2">
+            <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">Cancel</button>
+            <button type="button" id="confirmDeleteBtn" class="btn btn-danger btn-sm">Delete</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Seat selection modal (demo) -->
+  <div class="modal fade" id="seatModal" tabindex="-1" aria-labelledby="seatModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="seatModalLabel">Select Seats</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="d-flex align-items-center gap-3 mb-2 seat-legend">
+            <div class="legend-item d-flex align-items-center gap-2"><span class="seat legend-available"></span><small class="mb-0">Available</small></div>
+            <div class="legend-item d-flex align-items-center gap-2"><span class="seat legend-selected selected"></span><small class="mb-0">Selected</small></div>
+            <div class="legend-item d-flex align-items-center gap-2"><span class="seat legend-occupied occupied"></span><small class="mb-0">Occupied</small></div>
+            <div class="ms-auto"><small id="seatPriceInfo" class="text-muted">Seat price: ₦50 each</small></div>
+          </div>
+          <div id="seatModalNote" class="small text-muted mb-2 d-none">Viewing seat occupancy (read-only).</div>
+          <div id="seatMap" class="mb-3">
+            <!-- Seat map created by JS -->
+          </div>
+          <p class="text-muted">Click a seat to select. Selected seats are stored with your booking.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="applySeats" class="btn btn-primary">Apply Seats</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- FAQ Accordion (expanded) -->
+  <section id="faq" class="py-5 bg-white">
+    <div class="container">
+      <h2 class="mb-4"><img src="image/faq.svg" alt="FAQ" class="section-illustration me-2 align-middle"> Frequently Asked Questions</h2>
+      <div class="col-12 mt-3">
+  <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+              What is your baggage allowance?
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse show"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Carry-on: one cabin bag (up to 7kg) and one personal item. Checked baggage depends on fare—typical allowances: Economy 20kg, Business 30kg, First 40kg. Exact allowances and fees are shown at booking; additional baggage can be purchased during checkout.
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Can I change or cancel my booking?
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Changes and cancellations depend on the fare rules associated with your ticket. Refundable fares allow refunds (may take 7–14 business days); non-refundable fares may be eligible for travel credit minus fees. For demo bookings in this site, bookings are stored locally and can be edited or cleared from the Bookings section.
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Do you offer group or corporate discounts?
+            </button>
+          </h2>
+          <div id="collapseThree" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              Yes — group discounts are typically available for parties of 10 or more. Contact our sales team at <a href="mailto:groups@aerotrust.com">groups@aerotrust.com</a> to request a quote and negotiate group fares.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              What safety measures are in place?
+            </button>
+          </h2>
+          <div id="collapseFour" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Aero Trust follows strict safety standards including scheduled maintenance, certified flight crews, continuous operational monitoring, and compliance with regulatory requirements. We also train staff regularly on safety and emergency procedures.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+              How and when can I check in?
+            </button>
+          </h2>
+          <div id="collapseFive" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Online check-in usually opens 48 hours before departure and closes 1 hour before. You can check in online and use a mobile boarding pass where available; otherwise collect your boarding pass at the airport check-in desk. Have a valid ID or passport and travel documents ready.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+              What payment methods do you accept?
+            </button>
+          </h2>
+          <div id="collapseSix" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">We accept major credit/debit cards and secure payment providers (e.g., Visa, Mastercard, and PayPal) depending on your country. All payments are processed over secure gateways and card details are not stored on this demo site.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+              What is your refund policy?
+            </button>
+          </h2>
+          <div id="collapseSeven" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Refunds are processed according to the fare conditions of your ticket. Refundable fares are eligible for refunds to the original payment method; non-refundable fares may be converted to travel credit less applicable fees. Please allow 7–14 business days for refund processing.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+              Can I travel with pets or service animals?
+            </button>
+          </h2>
+          <div id="collapseEight" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Small pets in cabin are allowed on selected routes for a fee and require advance notice and an approved carrier. Service animals are accepted with appropriate documentation. Contact our support team before booking to confirm pet policies for your specific route.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">
+              I need special assistance. How do I request it?
+            </button>
+          </h2>
+          <div id="collapseNine" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Please request assistance at least 48 hours before departure. You can add assistance requests during booking or contact our support team via <a href="mailto:bookings@aerotrust.com">bookings@aerotrust.com</a> or the phone number on our Contact section.</div>
+          </div>
+        </div>
+
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">
+              Do I need a visa or other travel documents?
+            </button>
+          </h2>
+          <div id="collapseTen" class="accordion-collapse collapse"  data-bs-parent="#accordionExample">
+            <div class="accordion-body">Passengers are responsible for ensuring they have valid passports, visas, and any required health documents for their destination. Check embassy or government websites for up-to-date entry requirements before travel.</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers & Partners (content heavy) -->
+  <section id="careers" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4"><img src="image/careers.svg" alt="Careers" class="section-illustration me-2 align-middle"> Careers</h2>
+      <p class="text-muted">We hire pilots, cabin crew, engineers and office staff. Browse open roles and apply.</p>
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Pilot (Captain)</h5>
+              <p class="card-text">Minimum 5,000 hours and airline experience required.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Cabin Crew</h5>
+              <p class="card-text">Friendly and service-oriented staff to care for passengers.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Maintenance Technician</h5>
+              <p class="card-text">Licensed engineers with aircraft experience are encouraged to apply.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <h4 class="mt-4">Partners</h4>
+      <div class="d-flex align-items-center gap-3 flex-wrap partners">
+        <img src="image/partner1.svg" alt="Skyport" width="120" height="40">
+        <img src="image/partner2.svg" alt="AeroFuel" width="120" height="40">
+        <img src="image/partner3.svg" alt="JetCare" width="120" height="40">
+        <img src="image/partner4.svg" alt="NavLink" width="120" height="40">
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking Section (expanded with extra content & hints) -->
+  <section id="booking" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="mb-4"><img src="image/bookings.svg" alt="Book a Flight" class="section-illustration me-2 align-middle"> Book a Flight</h2>
+      <p class="text-muted">Our simple booking form is a demo. For a production flow you would integrate a secure payment gateway and backend API.</p>
+      <form id="booking-form" class="row g-3 needs-validation" novalidate>
+        <div class="col-md-6">
+          <label for="from" class="form-label">From</label>
+          <input id="from" name="from" class="form-control" required placeholder="Origin city">
+          <div class="invalid-feedback">Origin is required.</div>
+        </div>
+        <div class="col-md-6">
+          <label for="to" class="form-label">To</label>
+          <input id="to" name="to" class="form-control" required placeholder="Destination city">
+          <div class="invalid-feedback">Destination is required.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="depart" class="form-label">Departure</label>
+          <input id="depart" name="depart" type="date" class="form-control" required>
+          <div class="invalid-feedback">Please choose a departure date.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="return" class="form-label">Return (optional)</label>
+          <input id="return" name="return" type="date" class="form-control">
+        </div>
+        <div class="col-md-4">
+          <label for="passengers" class="form-label">Passengers</label>
+          <input id="passengers" name="passengers" type="number" min="1" value="1" class="form-control" required>
+          <div class="invalid-feedback">At least one passenger is required.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="class" class="form-label">Class</label>
+          <select id="class" name="class" class="form-select">
+            <option value="economy">Economy</option>
+            <option value="business">Business</option>
+            <option value="first">First</option>
+          </select>
+        </div>
+        <div class="col-md-4">
+          <label for="name" class="form-label">Full name</label>
+          <input id="name" name="name" class="form-control" required>
+          <div class="invalid-feedback">Please provide your full name.</div>
+        </div>
+        <div class="col-md-4">
+          <label for="email" class="form-label">Email</label>
+          <input id="email" name="email" type="email" class="form-control" required>
+          <div class="invalid-feedback">Valid email required.</div>
+        </div>
+        <div class="col-12 d-flex gap-2">
+          <button type="button" id="previewBtn" class="btn btn-outline-primary">Preview</button>
+          <button type="submit" class="btn btn-primary">Book Now</button>
+          <button type="button" id="seatSelect" class="btn btn-outline-secondary">Choose Seats</button>
+          <button type="button" id="checkSeats" class="btn btn-outline-info">Check Seats</button>
+          <button type="button" id="saveDraft" class="btn btn-secondary">Save Draft</button>
+        </div>
+        <div class="col-12">
+          <div id="selectedSeats" class="mt-2" aria-live="polite"></div>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-4">
+    <div class="container text-center">
+      <p class="mb-0"><img src="image/contact.svg" alt="Contact" class="section-illustration me-2 align-middle"> Questions? Email <a href="mailto:bookings@aerotrust.com">bookings@aerotrust.com</a> or call +234 800 000 0000</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>&copy; 2025 Aero Trust</small>
+      <div>
+        <a href="#" class="text-light me-2">Terms</a>
+        <a href="#" class="text-light">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Booking Summary Modal -->
+  <div class="modal fade" id="summaryModal" tabindex="-1" aria-labelledby="summaryModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="summaryModalLabel">Booking Summary</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="summaryContent">
+          <!-- Filled by JS -->
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" id="modalChooseSeats" class="btn btn-outline-secondary">Choose seats</button>
+          <button type="button" id="confirmBooking" class="btn btn-primary">Confirm Booking</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-+qdLa2B2YbQzQFfQx5NCeQk8K5Fq5YQv6cQm3u1yYv6kGQ3m3FT8Y0fsc0On7+7o" crossorigin="anonymous"></script>
+  <script src="js/booking.js" defer></script>
+
+  <!-- Additional inline scripts for demo utilities -->
+  <script>
+    // Small helper to print current bookings (for debugging/demo)
+    function debugPrintBookings(){
+      const b = JSON.parse(localStorage.getItem('aeroBookings') || '[]');
+      console.log('AeroBookings', b);
+      return b;
+    }
+    // Expose to window for quick console testing
+    window.debugAero = { print: debugPrintBookings };
+  </script>
+</body>
+</html>
