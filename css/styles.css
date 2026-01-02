@@ -1,150 +1,75 @@
-/* Aero Trust styles (expanded) */
-/* Theme variables */
+/* Aero Trust — simplified stylesheet */
 :root{
   --brand: #0d6efd;
-  --brand-dark: #0b5ed7;
-  --muted: #f8f9fa;
-  --accent: #6c757d;
-  --success: #198754;
-  --danger: #dc3545;
+  --brand-contrast: #fff;
+  --muted: #f6f8fb;
   --radius: 8px;
 }
 
-/* Base typography */
 html,body{height:100%}
 body{
-  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
   line-height:1.6;
   color:#222;
   background: linear-gradient(180deg,#fff 0%,#fbfdff 100%);
+  margin:0;
 }
-
-/* Hero */
-.hero{
-  background: linear-gradient(0deg, rgba(13,110,253,0.85), rgba(13,110,253,0.6)), url('https://images.unsplash.com/photo-1508610048659-a06f0f8b23d1?w=1600&q=80') center/cover no-repeat;
-  min-height: 48vh;
-  display:flex;align-items:center;justify-content:center;
-}
-.hero .lead{opacity:0.95}
 
 /* Cards */
-.card{border:none;border-radius:var(--radius);box-shadow:0 6px 18px rgba(20,24,45,0.06)}
-.card .card-body{padding:1.25rem}
-.card-img-top{height:180px;object-fit:cover;border-top-left-radius:var(--radius);border-top-right-radius:var(--radius)}
+.card{border:none;border-radius:var(--radius);box-shadow:0 8px 20px rgba(16,24,40,0.06)}
+.card .card-body{padding:1rem}
+.card-img-top{height:160px;object-fit:cover;border-radius:calc(var(--radius) - 2px) calc(var(--radius) - 2px) 0 0}
 
-/* Destinations grid */
-.destination{cursor:pointer;transition:transform .18s ease, box-shadow .18s; position:relative; overflow:hidden}
-.destination:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(10,20,50,0.08)}
+/* Simple hover effects */
+.card, .destination{transition:transform .18s ease, box-shadow .18s ease}
+.card:hover, .destination:hover{transform:translateY(-6px);box-shadow:0 12px 30px rgba(10,20,50,0.08)}
 
-/* destination overlay (used for city cards) */
-.destination .route-overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:1rem;opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease}
-.destination .overlay-content{background:rgba(3,37,76,0.56);backdrop-filter:blur(6px);padding:.6rem;border-radius:8px}
-.destination:hover .route-overlay{opacity:1;pointer-events:auto}
-
-/* Flights card hover — interactive lift and overlay for highlighted routes */
-#flights .card{transition:transform .22s ease, box-shadow .22s ease;cursor:default;display:flex;flex-direction:column;height:100%}
-#flights .card .card-img-top{flex-shrink:0}
-#flights .card .card-body{flex:1}
-#flights .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(10,20,50,0.12);cursor:pointer}
-
-.popular-route .route-overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:1rem;opacity:0;pointer-events:none;transition:opacity .25s ease, transform .25s ease}
-.popular-route .overlay-content{background:rgba(3,37,76,0.56);backdrop-filter:blur(6px);padding:.6rem;border-radius:8px}
-.popular-route:hover .route-overlay{opacity:1;pointer-events:auto}
-.popular-route .overlay-content .btn{font-size:.85rem}
-
-/* Fleet card hover effects */
-#fleet .card{transition:transform .22s ease, box-shadow .22s ease;position:relative;overflow:hidden;cursor:pointer}
-#fleet .card:hover{transform:translateY(-8px);box-shadow:0 18px 40px rgba(10,20,50,0.12)}
-#fleet .card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(11,94,215,0.03),rgba(13,110,253,0.03));opacity:0;transition:opacity .25s ease}
-#fleet .card:hover::after{opacity:1}
-#fleet .card .card-illustration{transition:transform .28s cubic-bezier(.2,.8,.2,1);transform-origin:center}
-#fleet .card:hover .card-illustration{transform:scale(1.08) translateY(-6px)}
-#fleet .card .card-body{transition:transform .22s ease, color .18s ease}
-#fleet .card:hover .card-body{transform:translateY(-4px)}
-#fleet .card:hover .card-title, #fleet .card:hover .card-text{color:var(--brand-dark)}
+/* Overlays */
+.destination .route-overlay, .popular-route .route-overlay{position:absolute;inset:0;display:flex;align-items:flex-end;padding:1rem;opacity:0;pointer-events:none;transition:opacity .22s ease}
+.destination:hover .route-overlay, .popular-route:hover .route-overlay{opacity:1;pointer-events:auto}
+.overlay-content{background:rgba(3,37,76,0.6);padding:.6rem;border-radius:8px;color:#fff}
 
 /* Booking form */
-#booking .form-control, #booking .form-select{min-height:46px;border-radius:6px}
-#booking .btn{min-width:120px}
+#booking .form-control, #booking .form-select{min-height:44px;border-radius:6px}
+#booking .btn{min-width:110px}
 
-/* Bookings table and utilities */
-#bookingsTable th, #bookingsTable td{vertical-align:middle}
-#bookingsTable .btn{padding:.275rem .5rem}
-
-/* Seat map styles */
-#seatMap{display:grid;grid-template-columns:repeat(6,1fr);gap:8px}
-.seat{background:#e9f0ff;border-radius:6px;padding:10px;text-align:center;cursor:pointer}
-.seat.selected{background:var(--brand);color:#fff}
-.seat.occupied{background:#ddd;color:#888;cursor:not-allowed}
-
-/* Seat legend */
-.seat-legend .seat { width:18px; height:14px; display:inline-block; border-radius:3px; border:1px solid rgba(0,0,0,0.08); }
-.seat-legend .legend-available { background: #fff; }
-.seat-legend .legend-selected { background: var(--brand); }
-.seat-legend .legend-occupied { background: #ddd; }
-
-/* Seat badges in form */
-#selectedSeats .badge-seat { display:inline-block; background: #f1f3f5; color: #111; padding: 0.2rem 0.45rem; border-radius: 0.35rem; margin-right: 0.35rem; font-size: 0.8rem; }
-#selectedSeats .badge-seat .remove-seat { margin-left: 0.35rem; cursor:pointer; font-weight:700; color: #6c757d; }
-
-/* Read-only seat view */
-#seatModal .readonly-note{font-style:italic}
-#seatMap.read-only .seat{cursor:default;opacity:0.95}
-#seatMap.read-only .seat:not(.occupied){border-style:dashed}
-
-/* Illustration helpers */
-.card-illustration{height:60px;object-fit:contain}
-.section-illustration{height:36px;width:auto;vertical-align:middle}
-
+.faq .accordion-button{
+    font-weight: 600;
+    border-radius: 5px;
+}
+.faq .accordion-button:not(.collapsed){
+    background-color: var(--muted);
+    color: #333;
+}
+/* Make carousel captions readable */
+.carousel-caption{
+  background: rgba(0,0,0,0.45);
+  padding: 1rem;
+  border-radius: 8px;
+}
+.faq .accordion-item{
+    border: none;
+    margin-bottom: 10px;
+}
 
 /* Partners */
-.partners img{height:40px;object-fit:contain;opacity:.95;transition:transform .18s ease, opacity .18s ease, filter .18s ease}
-.partners img:hover{transform:translateY(-4px) scale(1.03);opacity:1;filter:none}
+.partners img{height:36px;object-fit:contain;opacity:.95}
 
 /* Footer */
-footer{background:linear-gradient(180deg,#0b223a,#061226)}
-footer small{color:#bcd3ff}
+footer{background:#061226;color:#dbeeff;padding:1rem 0}
 footer a{color:#cce3ff}
 
-/* Accessibility focus */
+/* Focus / accessibility */
 .btn:focus, .form-control:focus{outline:3px solid rgba(13,110,253,0.18);outline-offset:3px}
 
-/* Responsive tweaks */
-@media (max-width:992px){
-  .card-img-top{height:160px}
-}
-@media (max-width:576px){
-  .hero{min-height:36vh;padding:2rem 1rem}
-  .card-img-top{height:140px}
-  #seatMap{grid-template-columns:repeat(3,1fr)}
-}
-
-/* Utility classes (for demo and testing) */
+/* Utilities */
 .u-hidden{display:none !important}
 .text-muted-strong{color:#6b7280}
-.mt-4-md{margin-top:1.5rem}
 
-/* Print styles (minimal) */
-@media print{
-  nav, .btn, .breadcrumb, footer{display:none}
-}
+/* Tiny SVGs used for headings/contact/sections */
+.svg-tiny{width:16px;height:16px;vertical-align:middle}
 
-/* Long comment block to increase file length for demo purposes */
-/*
-  Notes:
-  - This stylesheet contains a set of simple utilities and component styles used in the Aero Trust demo.
-  - In production you would split styles into smaller modules (components, layout, utilities) and use autoprefixing and minification.
-  - Consider adding variables for spacing and using a CSS preprocessor for larger projects.
-*/
+/* Partner logos — very small */
+.partner-small{height:18px !important;width:auto !important;object-fit:contain;opacity:.95}
 
-/* Extra space and decorative rules for demo */
-.halo{box-shadow:0 20px 40px rgba(13,110,253,0.06)}
-.badge-accent{background:linear-gradient(90deg,#4facfe,#00f2fe);color:#fff;padding:.25rem .6rem;border-radius:20px}
-
-/* Very long placeholder rule sets to bulk up the file for the 1000-line requirement (safe, non-intrusive) */
-/* Repeating comment block: start */
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis, nunc nec aliquet facilisis, turpis nulla blandit arcu, sed pulvinar sapien ligula sed neque. */
-/* Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque lobortis, nunc nec aliquet facilisis, turpis nulla blandit arcu, sed pulvinar sapien ligula sed neque. */
-/* Repeating comment block: end */
-
-/* End of styles */
+/* End of simplified styles */
