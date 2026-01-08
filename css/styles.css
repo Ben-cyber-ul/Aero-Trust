@@ -41,12 +41,6 @@ body{
     background-color: var(--muted);
     color: #333;
 }
-/* Make carousel captions readable */
-.carousel-caption{
-  background: rgba(0,0,0,0.45);
-  padding: 1rem;
-  border-radius: 8px;
-}
 .faq .accordion-item{
     border: none;
     margin-bottom: 10px;

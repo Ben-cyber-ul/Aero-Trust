@@ -12,13 +12,13 @@ body {
 .thank-you-box {
     background-color:whitesmoke;
     border-radius: 8px;
-    box-shadow: 0 0 10px burlywood;
+    box-shadow: 0 0 10px yellowgreen;
     max-width: 600px;
     margin: 50px auto;
     padding: 30px;
 }
 .thank-you-box h1 {
-    color: wheat;
+    color: black;
     margin-bottom: 20px;
 }
 .thank-you-box p {
@@ -27,13 +27,13 @@ body {
 }
 .thank-you-box .btn {
     background-color: lightgray;
-    color:beige;
+    color:black;
     padding: 10px 20px;
     text-decoration: none;
     border-radius: 5px;
 }
 .thank-you-box .btn:hover {
-    background-color:goldenrod;
+    background-color:gray;
 }
 /*Thank you page ends
 ========================
