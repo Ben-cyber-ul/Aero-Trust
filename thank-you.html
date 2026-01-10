@@ -20,5 +20,27 @@
 </div>
 </div>
 </section>
+
+<!-- Cookie Consent Banner -->
+<div id="cookie-banner" class="fixed-bottom bg-dark text-light p-3 text-center d-none" style="z-index: 1050;">
+  <div class="container">
+    <p class="mb-2 d-inline-block me-3">We use cookies to improve your experience. By using our site, you agree to our <a href="privacy.html" class="text-info text-decoration-underline">Privacy Policy</a>.</p>
+    <button id="accept-cookies" class="btn btn-sm btn-primary">Accept</button>
+  </div>
+</div>
+
+<script>
+  const cookieBanner = document.getElementById('cookie-banner');
+  if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+    cookieBanner.classList.remove('d-none');
+  }
+  const acceptCookies = document.getElementById('accept-cookies');
+  if (acceptCookies) {
+    acceptCookies.addEventListener('click', () => {
+      localStorage.setItem('cookieConsent', 'true');
+      cookieBanner.classList.add('d-none');
+    });
+  }
+</script>
 </body>
 </html>

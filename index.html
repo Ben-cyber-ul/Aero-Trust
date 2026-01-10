@@ -60,7 +60,7 @@
               <div class="overlay-content bg-gradient p-2 rounded text-light">
                 <div class="small">Popular Route</div>
                 <div class="h6 mb-0">Lagos — London</div>
-                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+                <a href="booking.html?from=Lagos&to=London" class="btn btn-sm btn-light mt-2">Book now</a>
               </div>
             </div>
           </div>
@@ -76,7 +76,7 @@
               <div class="overlay-content bg-gradient p-2 rounded text-light">
                 <div class="small">Popular Route</div>
                 <div class="h6 mb-0">Abuja — Dubai</div>
-                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+                <a href="booking.html?from=Abuja&to=Dubai" class="btn btn-sm btn-light mt-2">Book now</a>
               </div>
             </div>
           </div>
@@ -92,7 +92,7 @@
               <div class="overlay-content bg-gradient p-2 rounded text-light">
                 <div class="small">Popular Route</div>
                 <div class="h6 mb-0">Enugu — Johannesburg</div>
-                <a href="#booking" class="btn btn-sm btn-light mt-2">Book now</a>
+                <a href="booking.html?from=Enugu&to=Johannesburg" class="btn btn-sm btn-light mt-2">Book now</a>
               </div>
             </div>
           </div>
@@ -414,12 +414,34 @@
     <div class="container d-flex justify-content-between align-items-center">
       <small>&copy; 2025 Aero Trust</small>
       <div>
-        <a href="#" class="text-light me-2">Terms</a>
-        <a href="#" class="text-light">Privacy</a>
+        <a href="terms.html" class="text-light me-2">Terms</a>
+        <a href="privacy.html" class="text-light">Privacy</a>
       </div>
     </div>
   </footer>
 
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="fixed-bottom bg-dark text-light p-3 text-center d-none" style="z-index: 1050;">
+    <div class="container">
+      <p class="mb-2 d-inline-block me-3">We use cookies to improve your experience. By using our site, you agree to our <a href="privacy.html" class="text-info text-decoration-underline">Privacy Policy</a>.</p>
+      <button id="accept-cookies" class="btn btn-sm btn-primary">Accept</button>
+    </div>
+  </div>
+
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-+qdLa2B2YbQzQFfQx5NCeQk8K5Fq5YQv6cQm3u1yYv6kGQ3m3FT8Y0fsc0On7+7o" crossorigin="anonymous"></script>
+  <script>
+    // Cookie Consent Logic
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+      cookieBanner.classList.remove('d-none');
+    }
+    const acceptCookies = document.getElementById('accept-cookies');
+    if (acceptCookies) {
+      acceptCookies.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'true');
+        cookieBanner.classList.add('d-none');
+      });
+    }
+  </script>
 </body>
 </html>

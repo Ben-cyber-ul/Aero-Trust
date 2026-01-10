@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Aero Trust</title>
+  <link rel="stylesheet" href="css/styles.css" type="text/css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
+<body class="d-flex flex-column min-vh-100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container">
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="image/logo.svg" alt="Aero Trust logo" height="36" class="me-2">
+        <span class="fw-bold">Aero Trust</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="booking.html">Booking</a></li>
+          <li class="nav-item"><a class="nav-link" href="drafts.html">Drafts</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="py-5 bg-light flex-grow-1">
+    <div class="container">
+      <h1 class="mb-4">Privacy Policy</h1>
+      <div class="bg-white p-4 rounded shadow-sm">
+        <p class="text-muted">Last updated: January 10, 2026</p>
+        <p>At Aero Trust, we value your privacy. This policy explains how we collect, use, and protect your personal information.</p>
+        
+        <h4 class="mt-4">1. Information We Collect</h4>
+        <p>We collect information you provide directly to us, such as when you book a flight, create an account, or contact customer support. This may include your name, email address, phone number, and payment information.</p>
+        
+        <h4 class="mt-4">2. How We Use Your Information</h4>
+        <p>We use your information to process bookings, send flight updates, improve our services, and comply with legal obligations.</p>
+        
+        <h4 class="mt-4">3. Contact Us</h4>
+        <p>If you have questions about this policy, please contact us at privacy@aerotrust.com.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-light py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small>&copy; 2025 Aero Trust</small>
+      <div>
+        <a href="terms.html" class="text-light me-2">Terms</a>
+        <a href="privacy.html" class="text-light">Privacy</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Cookie Consent Banner -->
+  <div id="cookie-banner" class="fixed-bottom bg-dark text-light p-3 text-center d-none" style="z-index: 1050;">
+    <div class="container">
+      <p class="mb-2 d-inline-block me-3">We use cookies to improve your experience. By using our site, you agree to our <a href="privacy.html" class="text-info text-decoration-underline">Privacy Policy</a>.</p>
+      <button id="accept-cookies" class="btn btn-sm btn-primary">Accept</button>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-+qdLa2B2YbQzQFfQx5NCeQk8K5Fq5YQv6cQm3u1yYv6kGQ3m3FT8Y0fsc0On7+7o" crossorigin="anonymous"></script>
+  <script>
+    const cookieBanner = document.getElementById('cookie-banner');
+    if (cookieBanner && !localStorage.getItem('cookieConsent')) {
+      cookieBanner.classList.remove('d-none');
+    }
+    const acceptCookies = document.getElementById('accept-cookies');
+    if (acceptCookies) {
+      acceptCookies.addEventListener('click', () => {
+        localStorage.setItem('cookieConsent', 'true');
+        cookieBanner.classList.add('d-none');
+      });
+    }
+  </script>
+</body>
+</html>
